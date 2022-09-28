@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/Title"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/app_my_margin"
+        android:layout_marginLeft="@dimen/app_my_margin"
+        android:layout_marginTop="@dimen/app_my_margin"
+        android:textColor="@color/gray_font_dark"
+        android:visibility="gone"
+        tools:text="分享到" />
+
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="17dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:divider="@drawable/divider"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical" />
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/divider"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="45dp"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:divider="@drawable/divider"-->
+<!--            android:orientation="vertical" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:id="@+id/bottombutton"
+                android:background="@android:color/white"
+                android:gravity="right"
+                android:paddingRight="13dp"
+                android:paddingTop="30dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/always"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:text="总是"
+                    android:background="@drawable/btn_button"
+                    android:clickable="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/gray_font_dark"
+                    android:layout_marginTop="1dp" />
+
+                <Button
+                    android:id="@+id/onlyonce"
+                    android:layout_width="60dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/btn_button"
+                    android:clickable="false"
+                    android:text="仅一次"
+                    android:textColor="@color/gray_font_dark"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
